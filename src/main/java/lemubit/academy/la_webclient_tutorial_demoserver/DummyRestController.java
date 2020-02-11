@@ -28,9 +28,9 @@ public class DummyRestController {
         return person.addPerson(p1);
     }
 
-    @GetMapping("/hello")
-    public String hello() {
-        return "Hello";
+    @GetMapping("/awesome/{name}")
+    public String awesome(@PathVariable String name) {
+        return "This is awesome "+ name;
     }
 
     //Just to simulate a delay
