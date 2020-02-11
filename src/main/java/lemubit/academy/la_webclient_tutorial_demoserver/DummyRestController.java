@@ -28,6 +28,11 @@ public class DummyRestController {
         return person.addPerson(p1);
     }
 
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello";
+    }
+
     //Just to simulate a delay
     void simulateDelayedProcessing() {
         try {
